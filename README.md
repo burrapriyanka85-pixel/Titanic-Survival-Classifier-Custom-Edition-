@@ -1,12 +1,4 @@
-🚢 Titanic Survival Classifier (Custom Edition)
-
-
-
-
-
-
-
-
+Titanic Survival Classifier (Custom Edition)
 🧭 Overview
 
 A machine learning project that predicts whether a passenger survived the Titanic disaster.
@@ -71,7 +63,7 @@ Explainability: Visualized using Permutation Feature Importance
 📊 Key Results
 🔍 Feature Importance Visualization
 
-Ensure feature_importance_plot.png is uploaded in the repository.
+(Ensure feature_importance_plot.png is uploaded in the repository.)
 
 🧠 How to Run
 1️⃣ Clone the Repository
@@ -83,16 +75,10 @@ pip install -r requirements.txt
 
 3️⃣ Run the Notebook
 jupyter notebook
-
-
 Open:
-
 Titanic Survival Classifier (Custom Edition).ipynb
 
-
-Run all cells to reproduce results.
-
-🧰 Tech Stack
+Tech Stack
 
 Python 3.10+
 
@@ -109,13 +95,15 @@ scikit-learn
 joblib
 
 📦 Outputs
-File	Description
-Titanic Survival Classifier (Custom Edition).ipynb	Full notebook with code & analysis
-Titanic-Dataset.csv	Cleaned dataset used for training
-titanic_pipeline_joblib_v1.pkl	Trained ML pipeline
-titanic_predictions_with_probs.csv	Predictions with survival probabilities
-titanic_predictions_custom.csv	Custom prediction outputs
-requirements.txt	Dependencies list
+| File                                                 | Description                        |
+| ---------------------------------------------------- | ---------------------------------- |
+| `Titanic Survival Classifier (Custom Edition).ipynb` | Full notebook with code & analysis |
+| `Titanic-Dataset.csv`                                | Cleaned dataset used for training  |
+| `titanic_pipeline_joblib_v1.pkl`                     | Trained ML pipeline                |
+| `titanic_predictions_with_probs.csv`                 | Predictions with probabilities     |
+| `titanic_predictions_custom.csv`                     | Custom prediction outputs          |
+| `requirements.txt`                                   | Dependencies list                  |
+
 📂 Project Structure
 ├── Titanic Survival Classifier (Custom Edition).ipynb
 ├── Titanic-Dataset.csv
@@ -143,5 +131,4 @@ Experiment with XGBoost / LightGBM
 This project is released under the MIT License.
 
 Dataset Source:
-🔗 Kaggle – Titanic: Machine Learning from Disaster
-https://www.kaggle.com/c/titanic
+🔗 https://www.kaggle.com/c/titanic
