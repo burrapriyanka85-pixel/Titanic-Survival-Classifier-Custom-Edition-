@@ -104,16 +104,20 @@ scikit-learn
 joblib
 
 📦 Project Outputs
-File	Description
-Titanic Survival Classifier (Custom Edition).ipynb	Notebook with full pipeline
-Titanic-Dataset.csv	Cleaned dataset
-titanic_pipeline_joblib_v1.pkl	Saved ML pipeline
-titanic_predictions_with_probs.csv	Predictions + probabilities
-titanic_predictions_custom.csv	Custom prediction output
-feature_importance_plot.png	Feature importance chart
-requirements.txt	Dependencies
+
+| File                                               | Description                 |
+| -------------------------------------------------- | --------------------------- |
+| Titanic Survival Classifier (Custom Edition).ipynb | Notebook with full pipeline |
+| Titanic-Dataset.csv                                | Cleaned dataset             |
+| titanic_pipeline_joblib_v1.pkl                     | Saved ML pipeline           |
+| titanic_predictions_with_probs.csv                 | Predictions + probabilities |
+| titanic_predictions_custom.csv                     | Custom prediction output    |
+| feature_importance_plot.png                        | Feature importance chart    |
+| requirements.txt                                   | Dependencies                |
+
 
 📁 Project Structure
+
 ├── Titanic Survival Classifier (Custom Edition).ipynb
 ├── Titanic-Dataset.csv
 ├── titanic_pipeline_joblib_v1.pkl
@@ -122,6 +126,7 @@ requirements.txt	Dependencies
 ├── feature_importance_plot.png
 ├── requirements.txt
 └── README.md
+
 
 🚧 Future Enhancements
 
