@@ -1,5 +1,4 @@
-Titanic Survival Classifier (Custom Edition)
-
+🚢 Titanic Survival Classifier (Custom Edition)
 🧭 Overview
 
 A machine learning project that predicts whether a passenger survived the Titanic disaster.
@@ -78,8 +77,9 @@ pip install -r requirements.txt
 jupyter notebook
 Open:
 Titanic Survival Classifier (Custom Edition).ipynb
+Run all cells to reproduce results.
 
-Tech Stack
+🧰 Tech Stack
 
 Python 3.10+
 
