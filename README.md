@@ -76,8 +76,13 @@ pip install -r requirements.txt
 
 3️⃣ Run the Notebook
 jupyter notebook
+
+
 Open:
+
 Titanic Survival Classifier (Custom Edition).ipynb
+
+
 Run all cells to reproduce results.
 
 🧰 Tech Stack
@@ -98,17 +103,15 @@ joblib
 
 📦 Outputs
 
-| File                                                 | Description                        |
-| ---------------------------------------------------- | ---------------------------------- |
-| `Titanic Survival Classifier (Custom Edition).ipynb` | Full notebook with code & analysis |
-| `Titanic-Dataset.csv`                                | Cleaned dataset used for training  |
-| `titanic_pipeline_joblib_v1.pkl`                     | Trained ML pipeline                |
-| `titanic_predictions_with_probs.csv`                 | Predictions with probabilities     |
-| `titanic_predictions_custom.csv`                     | Custom prediction outputs          |
-| `requirements.txt`                                   | Dependencies list                  |
+File	Description
+Titanic Survival Classifier (Custom Edition).ipynb	Full notebook with code & analysis
+Titanic-Dataset.csv	Cleaned dataset used for training
+titanic_pipeline_joblib_v1.pkl	Trained ML pipeline
+titanic_predictions_with_probs.csv	Predictions with probabilities
+titanic_predictions_custom.csv	Custom prediction outputs
+requirements.txt	Dependencies list
 
 📂 Project Structure
-
 ├── Titanic Survival Classifier (Custom Edition).ipynb
 ├── Titanic-Dataset.csv
 ├── titanic_pipeline_joblib_v1.pkl
