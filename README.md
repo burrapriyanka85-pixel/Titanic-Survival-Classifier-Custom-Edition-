@@ -95,6 +95,7 @@ scikit-learn
 joblib
 
 📦 Outputs
+
 | File                                                 | Description                        |
 | ---------------------------------------------------- | ---------------------------------- |
 | `Titanic Survival Classifier (Custom Edition).ipynb` | Full notebook with code & analysis |
@@ -105,6 +106,7 @@ joblib
 | `requirements.txt`                                   | Dependencies list                  |
 
 📂 Project Structure
+
 ├── Titanic Survival Classifier (Custom Edition).ipynb
 ├── Titanic-Dataset.csv
 ├── titanic_pipeline_joblib_v1.pkl
