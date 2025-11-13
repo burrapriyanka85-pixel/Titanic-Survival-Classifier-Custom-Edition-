@@ -1,55 +1,59 @@
 🚢 Titanic Survival Classifier (Custom Edition)
 
-🧭 Overview
+A machine learning project that predicts whether a passenger survived the Titanic disaster using a modern and modular ML pipeline.
 
-A machine learning project that predicts whether a passenger survived the Titanic disaster.
-This custom edition implements a modern, modular ML pipeline, featuring:
+This custom edition includes automated preprocessing, advanced feature engineering, model tuning, and explainability.
+
+📌 Overview
+
+This project implements:
 
 Automated preprocessing
 
-Advanced feature engineering
+Feature engineering
 
 Cross-validation
 
 Hyperparameter tuning
 
-Model explainability using Permutation Feature Importance
+Model selection
 
-Built with Python, scikit-learn, pandas, and matplotlib.
+Permutation Feature Importance
+
+Probability-based predictions
+
+Built using Python, pandas, NumPy, scikit-learn, matplotlib, seaborn, joblib.
 
 🚀 Features
 
-🧩 KNN-based imputation for missing data
+KNN imputation for missing values
 
-⚙️ Automated preprocessing using ColumnTransformer + OneHotEncoder
+Automated preprocessing with ColumnTransformer
 
-🧠 Feature engineering:
+One-hot encoding + scaling
 
 Title extraction
 
 Deck extraction
 
-Family Size
+Family size
 
-Fare per Person
+Fare per person
 
-Name Length
+Name length
 
-🔍 Model tuning with RandomizedSearchCV
+RandomizedSearchCV for tuning
 
-📊 Permutation Feature Importance for interpretability
+Permutation Feature Importance
 
-🎯 Probability-based predictions
+Final model accuracy: ~82.68%
 
-✅ Test Accuracy: ≈ 82.68%
+📊 Model Summary
 
-🧾 Model Summary
-
-Final Model Used: Logistic Regression (Random Forest also tested)
-
+Final Model: Logistic Regression
 Accuracy: ~0.82 on test data
 
-Top Features:
+Most important features:
 
 Sex
 
@@ -59,22 +63,23 @@ Pclass
 
 Age
 
-Explainability: Visualized using Permutation Feature Importance
+Explainability is provided using Permutation Feature Importance.
 
-📊 Key Results
-🔍 Feature Importance Visualization
+📈 Key Results
 
-(Ensure feature_importance_plot.png is uploaded in the repository.)
+Make sure you upload:
 
-🧠 How to Run
-1️⃣ Clone the Repository
+feature_importance_plot.png
+
+🧠 How to Run the Project
+1. Clone the repository
 git clone https://github.com/burrapriyanka85-pixel/Titanic-Survival-Classifier-Custom-Edition.git
 cd Titanic-Survival-Classifier-Custom-Edition
 
-2️⃣ Install Dependencies
+2. Install dependencies
 pip install -r requirements.txt
 
-3️⃣ Run the Notebook
+3. Run the notebook
 jupyter notebook
 
 
@@ -82,10 +87,7 @@ Open:
 
 Titanic Survival Classifier (Custom Edition).ipynb
 
-
-Run all cells to reproduce results.
-
-🧰 Tech Stack
+🛠 Tech Stack
 
 Python 3.10+
 
@@ -101,17 +103,17 @@ scikit-learn
 
 joblib
 
-📦 Outputs
-
+📦 Project Outputs
 File	Description
-Titanic Survival Classifier (Custom Edition).ipynb	Full notebook with code & analysis
-Titanic-Dataset.csv	Cleaned dataset used for training
-titanic_pipeline_joblib_v1.pkl	Trained ML pipeline
-titanic_predictions_with_probs.csv	Predictions with probabilities
-titanic_predictions_custom.csv	Custom prediction outputs
-requirements.txt	Dependencies list
+Titanic Survival Classifier (Custom Edition).ipynb	Notebook with full pipeline
+Titanic-Dataset.csv	Cleaned dataset
+titanic_pipeline_joblib_v1.pkl	Saved ML pipeline
+titanic_predictions_with_probs.csv	Predictions + probabilities
+titanic_predictions_custom.csv	Custom prediction output
+feature_importance_plot.png	Feature importance chart
+requirements.txt	Dependencies
 
-📂 Project Structure
+📁 Project Structure
 ├── Titanic Survival Classifier (Custom Edition).ipynb
 ├── Titanic-Dataset.csv
 ├── titanic_pipeline_joblib_v1.pkl
@@ -123,19 +125,19 @@ requirements.txt	Dependencies list
 
 🚧 Future Enhancements
 
-Add Streamlit or Flask deployment
+Add Streamlit / Flask deployment
 
-Integrate SHAP explainability
+Add SHAP explainability
 
-Convert the model pipeline into a Python package
+Convert pipeline into a Python package
 
-Add automated tests & CI/CD
+Add automated tests and CI/CD
 
 Experiment with XGBoost / LightGBM
 
 📜 License
 
-This project is released under the MIT License.
+Released under the MIT License.
 
 Dataset Source:
-🔗 https://www.kaggle.com/c/titanic
+https://www.kaggle.com/c/titanic
