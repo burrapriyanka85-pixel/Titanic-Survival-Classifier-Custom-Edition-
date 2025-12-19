@@ -1,15 +1,6 @@
-<<<<<<< HEAD
 pandas
 numpy
 scikit-learn
 seaborn
 matplotlib
 joblib
-=======
-pandas
-numpy
-scikit-learn
-seaborn
-matplotlib
-joblib
->>>>>>> a0807e1 (Initial commit: Titanic Survival Classifier (Custom Edition))
