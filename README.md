@@ -22,44 +22,43 @@ Model explainability
 
 Reproducible prediction pipelines
 
-The goal is to demonstrate real-world ML engineering skills, not just algorithm usage.
+🎯 Goal: Demonstrate real-world ML engineering skills, not just algorithm usage.
 
-🧠 ML Pipeline Architecture
 Raw Data (CSV)
-     │
-     ▼
+   │
+   ▼
 Exploratory Data Analysis (EDA)
-     │
-     ▼
+   │
+   ▼
 Feature Engineering
- ├─ Title extraction
- ├─ Deck extraction
- ├─ Family size
- ├─ Fare per person
- ├─ Name length
-     │
-     ▼
+   ├─ Title extraction
+   ├─ Deck extraction
+   ├─ Family size
+   ├─ Fare per person
+   ├─ Name length
+   │
+   ▼
 Preprocessing Pipeline
- ├─ KNN Imputation (numeric features)
- ├─ One-Hot Encoding (categorical features)
- ├─ Feature Scaling
-     │
-     ▼
+   ├─ KNN Imputation (numeric features)
+   ├─ One-Hot Encoding (categorical features)
+   ├─ Feature Scaling
+   │
+   ▼
 Model Training
- ├─ Logistic Regression
- ├─ Random Forest
- ├─ Gradient Boosting
- ├─ Support Vector Machine (RBF)
-     │
-     ▼
+   ├─ Logistic Regression
+   ├─ Random Forest
+   ├─ Gradient Boosting
+   ├─ Support Vector Machine (RBF)
+   │
+   ▼
 Model Selection (Stratified Cross-Validation)
-     │
-     ▼
+   │
+   ▼
 Explainability
- ├─ Permutation Feature Importance
- ├─ SHAP Analysis
-     │
-     ▼
+   ├─ Permutation Feature Importance
+   ├─ SHAP Analysis
+   │
+   ▼
 Saved Pipeline + Predictions
 
 🚀 Key Features
@@ -86,7 +85,7 @@ Hyperparameter tuning using RandomizedSearchCV
 
 Probability-based survival predictions
 
-Model explainability using permutation importance and SHAP
+Model explainability using Permutation Importance and SHAP
 
 📊 Evaluation Metrics
 
@@ -102,7 +101,7 @@ F1-score
 
 Stratified Cross-Validation (mean and standard deviation)
 
-Cross-validation results demonstrate stable performance with low variance, indicating good generalization to unseen data.
+📈 Cross-validation results demonstrate stable performance with low variance, indicating good generalization to unseen data.
 
 🔍 Model Comparison
 
@@ -118,7 +117,7 @@ Support Vector Machine (RBF)
 
 Models were compared using mean cross-validation accuracy and standard deviation.
 
-Logistic Regression was selected as the final model due to its:
+✅ Final Model Selection — Logistic Regression, chosen for:
 
 Strong and stable performance
 
@@ -130,9 +129,11 @@ Suitability for explainability analysis
 
 ⚙️ Model Optimization
 
-A baseline model was first trained to establish reference performance.
+A baseline model was first trained to establish reference performance
 
-Hyperparameter tuning was then performed using RandomizedSearchCV with stratified cross-validation to:
+Hyperparameter tuning was performed using RandomizedSearchCV with stratified cross-validation
+
+🎯 Objectives:
 
 Improve predictive performance
 
@@ -162,7 +163,7 @@ These methods confirm that the model learns domain-relevant and interpretable pa
 
 The distribution of predicted survival probabilities was analyzed to understand model confidence.
 
-This analysis helps distinguish between:
+This helps distinguish between:
 
 High-certainty predictions
 
@@ -178,7 +179,7 @@ The trained pipeline is saved using joblib
 
 Predictions are generated using the saved pipeline without retraining
 
-This design ensures consistent, reproducible, and reliable predictions.
+✔ Ensures consistent, reproducible, and reliable predictions
 
 🧠 How to Run the Project
 1️⃣ Clone the repository
@@ -214,16 +215,18 @@ joblib
 
 SHAP
 
-📦 Project Outputs
-File	Description
-Titanic Survival Classifier (Custom Edition).ipynb	Complete ML pipeline notebook
-Titanic-Dataset.csv	Dataset
-titanic_pipeline_joblib_v1.pkl	Saved trained pipeline
-titanic_predictions_with_probs.csv	Predictions with probabilities
-titanic_predictions_custom.csv	Custom prediction output
-feature_importance_plot.png	Feature importance visualization
-requirements.txt	Project dependencies
+| File                                               | Description                      |
+| -------------------------------------------------- | -------------------------------- |
+| Titanic Survival Classifier (Custom Edition).ipynb | Complete ML pipeline notebook    |
+| Titanic-Dataset.csv                                | Dataset                          |
+| titanic_pipeline_joblib_v1.pkl                     | Saved trained pipeline           |
+| titanic_predictions_with_probs.csv                 | Predictions with probabilities   |
+| titanic_predictions_custom.csv                     | Custom prediction output         |
+| feature_importance_plot.png                        | Feature importance visualization |
+| requirements.txt                                   | Project dependencies             |
+
 📁 Project Structure
+
 ├── Titanic Survival Classifier (Custom Edition).ipynb
 ├── Titanic-Dataset.csv
 ├── titanic_pipeline_joblib_v1.pkl
@@ -259,4 +262,4 @@ Released under the MIT License.
 📚 Dataset Source
 
 Kaggle Titanic Competition
-https://www.kaggle.com/c/titanic
+🔗 https://www.kaggle.com/c/titanic
