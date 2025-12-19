@@ -1,85 +1,194 @@
 🚢 Titanic Survival Classifier (Custom Edition)
 
-A machine learning project that predicts whether a passenger survived the Titanic disaster using a modern and modular ML pipeline.
+A production-style machine learning project that predicts whether a passenger survived the Titanic disaster using a modern, modular, and explainable ML pipeline.
 
-This custom edition includes automated preprocessing, advanced feature engineering, model tuning, and explainability.
+This project focuses on robust preprocessing, domain-driven feature engineering, systematic model evaluation, and interpretability, following industry best practices.
 
-📌 Overview
+📌 Project Overview
 
-This project implements:
+This project implements an end-to-end supervised machine learning workflow, covering:
 
-Automated preprocessing
+Exploratory Data Analysis (EDA)
 
 Feature engineering
 
-Cross-validation
+Automated preprocessing pipelines
 
-Hyperparameter tuning
+Model training, tuning, and comparison
 
-Model selection
+Performance evaluation using multiple metrics
 
-Permutation Feature Importance
+Model explainability
 
-Probability-based predictions
+Reproducible prediction pipelines
 
-Built using Python, pandas, NumPy, scikit-learn, matplotlib, seaborn, joblib.
+The goal is to demonstrate real-world ML engineering skills, not just algorithm usage.
 
-🚀 Features
+🧠 ML Pipeline Architecture
+Raw Data (CSV)
+     │
+     ▼
+Exploratory Data Analysis (EDA)
+     │
+     ▼
+Feature Engineering
+ ├─ Title extraction
+ ├─ Deck extraction
+ ├─ Family size
+ ├─ Fare per person
+ ├─ Name length
+     │
+     ▼
+Preprocessing Pipeline
+ ├─ KNN Imputation (numeric features)
+ ├─ One-Hot Encoding (categorical features)
+ ├─ Feature Scaling
+     │
+     ▼
+Model Training
+ ├─ Logistic Regression
+ ├─ Random Forest
+ ├─ Gradient Boosting
+ ├─ Support Vector Machine (RBF)
+     │
+     ▼
+Model Selection (Stratified Cross-Validation)
+     │
+     ▼
+Explainability
+ ├─ Permutation Feature Importance
+ ├─ SHAP Analysis
+     │
+     ▼
+Saved Pipeline + Predictions
 
-KNN imputation for missing values
+🚀 Key Features
 
-Automated preprocessing with ColumnTransformer
+Automated preprocessing using Pipeline and ColumnTransformer
 
-One-hot encoding + scaling
+KNN imputation for missing numerical values
 
-Title extraction
+One-hot encoding and feature scaling
 
-Deck extraction
+Advanced feature engineering:
 
-Family size
+Title extraction from passenger names
 
-Fare per person
+Deck extraction from cabin information
 
-Name length
+Family size computation
 
-RandomizedSearchCV for tuning
+Fare per person normalization
 
-Permutation Feature Importance
+Name length as a text-complexity feature
 
-Final model accuracy: ~82.68%
+Hyperparameter tuning using RandomizedSearchCV
 
-📊 Model Summary
+Probability-based survival predictions
 
-Final Model: Logistic Regression
-Accuracy: ~0.82 on test data
+Model explainability using permutation importance and SHAP
 
-Most important features:
+📊 Evaluation Metrics
 
-Sex
+The final selected model was evaluated using multiple performance metrics to ensure robustness and reliability:
 
-Title
+Accuracy
 
-Pclass
+Precision
 
-Age
+Recall
 
-Explainability is provided using Permutation Feature Importance.
+F1-score
 
-📈 Key Results
+Stratified Cross-Validation (mean and standard deviation)
 
-Make sure you upload:
+Cross-validation results demonstrate stable performance with low variance, indicating good generalization to unseen data.
 
-feature_importance_plot.png
+🔍 Model Comparison
+
+Multiple classification models were trained and evaluated using stratified cross-validation:
+
+Logistic Regression
+
+Random Forest
+
+Gradient Boosting
+
+Support Vector Machine (RBF)
+
+Models were compared using mean cross-validation accuracy and standard deviation.
+
+Logistic Regression was selected as the final model due to its:
+
+Strong and stable performance
+
+Lower variance
+
+High interpretability
+
+Suitability for explainability analysis
+
+⚙️ Model Optimization
+
+A baseline model was first trained to establish reference performance.
+
+Hyperparameter tuning was then performed using RandomizedSearchCV with stratified cross-validation to:
+
+Improve predictive performance
+
+Reduce overfitting
+
+Identify optimal hyperparameter configurations
+
+🔎 Model Explainability
+
+To ensure transparency and trust in predictions, multiple explainability techniques were applied:
+
+🔹 Permutation Feature Importance
+
+Measures performance degradation when feature values are randomly shuffled
+
+Identifies globally important features influencing model predictions
+
+🔹 SHAP (SHapley Additive Explanations)
+
+Global feature importance using SHAP summary plots
+
+Feature contribution analysis using SHAP bar plots
+
+These methods confirm that the model learns domain-relevant and interpretable patterns, rather than spurious correlations.
+
+📈 Prediction Probability Analysis
+
+The distribution of predicted survival probabilities was analyzed to understand model confidence.
+
+This analysis helps distinguish between:
+
+High-certainty predictions
+
+Borderline or uncertain cases
+
+♻️ Reproducibility & Pipeline Design
+
+A single scikit-learn Pipeline handles preprocessing and modeling
+
+Identical transformations are applied during training and inference
+
+The trained pipeline is saved using joblib
+
+Predictions are generated using the saved pipeline without retraining
+
+This design ensures consistent, reproducible, and reliable predictions.
 
 🧠 How to Run the Project
-1. Clone the repository
+1️⃣ Clone the repository
 git clone https://github.com/burrapriyanka85-pixel/Titanic-Survival-Classifier-Custom-Edition.git
 cd Titanic-Survival-Classifier-Custom-Edition
 
-2. Install dependencies
+2️⃣ Install dependencies
 pip install -r requirements.txt
 
-3. Run the notebook
+3️⃣ Run the notebook
 jupyter notebook
 
 
@@ -95,29 +204,26 @@ pandas
 
 NumPy
 
+scikit-learn
+
 matplotlib
 
 seaborn
 
-scikit-learn
-
 joblib
 
+SHAP
+
 📦 Project Outputs
-
-| File                                               | Description                 |
-| -------------------------------------------------- | --------------------------- |
-| Titanic Survival Classifier (Custom Edition).ipynb | Notebook with full pipeline |
-| Titanic-Dataset.csv                                | Cleaned dataset             |
-| titanic_pipeline_joblib_v1.pkl                     | Saved ML pipeline           |
-| titanic_predictions_with_probs.csv                 | Predictions + probabilities |
-| titanic_predictions_custom.csv                     | Custom prediction output    |
-| feature_importance_plot.png                        | Feature importance chart    |
-| requirements.txt                                   | Dependencies                |
-
-
+File	Description
+Titanic Survival Classifier (Custom Edition).ipynb	Complete ML pipeline notebook
+Titanic-Dataset.csv	Dataset
+titanic_pipeline_joblib_v1.pkl	Saved trained pipeline
+titanic_predictions_with_probs.csv	Predictions with probabilities
+titanic_predictions_custom.csv	Custom prediction output
+feature_importance_plot.png	Feature importance visualization
+requirements.txt	Project dependencies
 📁 Project Structure
-
 ├── Titanic Survival Classifier (Custom Edition).ipynb
 ├── Titanic-Dataset.csv
 ├── titanic_pipeline_joblib_v1.pkl
@@ -127,22 +233,30 @@ joblib
 ├── requirements.txt
 └── README.md
 
-
 🚧 Future Enhancements
 
-Add Streamlit / Flask deployment
+Streamlit / Flask deployment
 
-Add SHAP explainability
+REST API using FastAPI
 
-Convert pipeline into a Python package
+Modular Python package (src/ structure)
 
-Add automated tests and CI/CD
+Automated testing and CI/CD
 
-Experiment with XGBoost / LightGBM
+Model monitoring
+
+Experimentation with XGBoost / LightGBM
+
+📌 Disclaimer
+
+This project is intended for educational, academic, and portfolio purposes.
+It demonstrates machine learning concepts and should not be used for real-world decision-making.
 
 📜 License
 
 Released under the MIT License.
 
-Dataset Source:
+📚 Dataset Source
+
+Kaggle Titanic Competition
 https://www.kaggle.com/c/titanic
